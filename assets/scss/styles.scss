@@ -1078,3 +1078,15 @@ input{
 
 
 /* For tall screens on mobiles y desktop*/
+
+@media screen and (min-height: 721px){
+    body{
+        margin: 0;
+    }
+    .home{
+        &__container,
+        &__img{
+            height: 640px;
+        }
+    }
+}
