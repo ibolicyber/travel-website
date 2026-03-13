@@ -776,6 +776,38 @@ input{
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 
+@media screen and (max-width: 340px){
+    .place{
+        &__container{
+            grid-template-columns: max-content;
+            justify-content: center;
+        }
+    }
+
+    .experience{
+        &__content{
+            padding: 0;
+        }
+        &__overlay:nth-child(1){
+            width: 190px;
+        }
+        &__overlay:nth-child(2){
+            width: 80px;
+        }
+    }
+
+    .home{
+        &__info{
+            width: 190px;
+            padding: 1rem;
+        }
+    }
+    .experience__img,
+    .video__container{
+        padding: 0;
+    }
+}
+
 
 /* For medium devices */
 
