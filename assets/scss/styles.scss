@@ -979,6 +979,101 @@ input{
 
 
 /* For large devices */
+@media screen and (min-width: 1024px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home{
+        &__container{
+            grid-template-rows: 2fr .5fr;
+        }
+        &__info{
+            width: 328px;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 2rem;
+
+            &-title{
+                font-size: var(--normal-font-size);
+            }
+            &-img{
+                width: 240px;
+            }
+        }
+    }
+
+    .about{
+        &__img{
+            &-one{
+                width: 230px;
+            }
+            &-two{
+                width: 290px;
+            }
+        }
+    }
+
+    .discover{
+        &__card{
+            width: 237px;
+        }
+        &__container{
+            width: 700px;
+        }
+        &__data{
+            left: 1.5rem;
+            bottom: 2rem;
+        }
+        &__title{
+            font-size: var(--h2-font-size);
+        }
+    }
+
+    .experience{
+        &__content{
+            margin: var(--mb-1) 0;
+            column-gap: 3.5rem;
+        }
+        &__overlay:nth-child(1){
+            width: 463px;
+            margin-right: 7rem;
+        }
+        &__overlay:nth-child(2){
+            width: 220px;
+            top: 3rem;
+        }
+    }
+
+    .video{
+        &__container{
+            grid-template-columns: .7fr
+        }
+        &__description{
+            padding: 0 8rem;
+        }
+    }
+
+    .place{
+        &__container{
+            gap: 3rem 2rem;
+        }
+        &__card, 
+        &__img{
+            height: 263px;
+        }
+    }
+
+    .footer__content{
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1024px;
+    }
+}
 
 
 
